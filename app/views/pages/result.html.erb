@@ -6,7 +6,12 @@
   </tr>
   <tr>
     <td class="results">
-      <span class="content"><%= "Fill up #{@amount_to_fill} gallons" %></span>
+      <span class="content"><%= "Fill up with #{@amount_to_fill} gallons of #{@boost_octane} octane" %></span>
+    </td>
+  </tr>
+  <tr>
+    <td class="results">
+      <span class="content"><%= "and the rest with #{@base_octane} octane to achieve #{@target_octane} octane" %></span>
     </td>
   </tr>
 </table>
