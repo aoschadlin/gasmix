@@ -1,0 +1,9 @@
+<%= form_for(@car) do |c| %>
+  <%= render 'shared/error_messages', :object => c.object %>
+  <div class="field">
+    <%= c.text %>
+  </div>
+  <div class="actions">
+    <%= c.submit "Calculate"%>
+  </div>
+<% end %>
