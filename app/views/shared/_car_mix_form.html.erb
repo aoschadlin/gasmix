@@ -1,10 +1,28 @@
-<%= form_for :car, @car, :url => {:action => "create"} do |c| %>
+<%= form_for @car, :url => { :action => "result"} do |c| %>
   <div><h1><%= label_tag :name %></h1></div>
   <div class="field">
-    <%= c.text_field :existing_amount %>
+    <%= c.label :tank_size %>
+    <%= c.text_field :tank_size, :size => 5 %>
   </div>
   <div class="field">
-    <%= c.text_field :existing_octane %>
+    <%= c.label :existing_amount %>
+    <%= c.text_field :existing_amount, :size => 5 %>
+  </div>
+  <div class="field">
+    <%= c.label :existing_octane %>
+    <%= c.text_field :existing_octane, :size => 5 %>
+  </div>
+  <div class="field">
+    <%= c.label :base_octane %>
+    <%= c.text_field :base_octane, :size => 5 %>
+  </div>
+  <div class="field">
+    <%= c.label :boost_octane %>
+    <%= c.text_field :boost_octane, :size => 5 %>
+  </div>
+  <div class="field">
+    <%= c.label :target_octane %>
+    <%= c.text_field :target_octane, :size => 5 %>
   </div>
   <div class="actions">
     <%= c.submit "Calculate"%>
