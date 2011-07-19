@@ -2,6 +2,13 @@
   <nav class="round">
     <ul>
       <li><%= link_to "Home", root_path %></li>
+      <li><%= render 'devise/menu/registration_items' %></li>
+      <li><%= render 'devise/menu/login_items' %></li>
+      <% if current_user.try(:admin?) %>
+        <% # do something %>
+      <% end %>
+    </td>
+  </tr>
     </ul>
   </nav>
 </header>

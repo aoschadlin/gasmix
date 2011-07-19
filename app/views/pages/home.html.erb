@@ -1,8 +1,5 @@
-<table class="front" summary="Main page">
-  <tr>
-    <td class="main">
-      <h1 class="car">Gas Mix calculator</h1>
-      <%= render 'shared/car_mix_form' %>
-    </td>
-  </tr>
-</table>
+<% if user_signed_in? %>
+Car selection screen
+<% else %>
+Marketing blurb
+<% end %>

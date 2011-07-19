@@ -3,9 +3,10 @@ Gasmix::Application.routes.draw do
   devise_for :users
 
   root :to => "pages#home"
-  match '/contact', :to => 'pages#contact'
-  match '/about',   :to => 'pages#about'
-  match '/result',  :to => 'pages#result'
+  match '/contact',     :to => 'pages#contact'
+  match '/about',       :to => 'pages#about'
+  match '/data_screen', :to => 'pages#data_screen'
+  match '/result',      :to => 'pages#result'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

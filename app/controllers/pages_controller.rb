@@ -12,6 +12,11 @@ class PagesController < ApplicationController
     @title = "About"
   end
   
+  def data_screen
+    @car = Car.new
+    @title = "Calculator"
+  end
+  
   def result
     @title = "Result"
     
